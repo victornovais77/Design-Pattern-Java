@@ -1,6 +1,6 @@
 package com.br.imposto;
 
-import com.br.loja.Orcamento;
+import com.br.orcamento.Orcamento;
 
 import java.math.BigDecimal;
 
