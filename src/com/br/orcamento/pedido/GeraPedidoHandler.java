@@ -10,9 +10,10 @@ import java.util.List;
 
 public class GeraPedidoHandler {
 
-    private List<AcaoAposGerarPedido> acao;
+    private List<AcaoAposGerarPedido> acoes;
 
-    public GeraPedidoHandler() {
+    public GeraPedidoHandler(List <AcaoAposGerarPedido> acoes) {
+        this.acoes = acoes;
     }
 
     public void execute(GerarPedido dados){
@@ -20,6 +21,6 @@ public class GeraPedidoHandler {
 
         Pedido pedido = new Pedido(dados.getCliente(), LocalDateTime.now(),orcamento);
 
-        acao.forEach(a -> a.executarAcao(pedido));
+        acoes.forEach(a -> a.executarAcao(pedido));
     }
 }
