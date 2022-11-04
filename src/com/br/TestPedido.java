@@ -1,4 +1,4 @@
-package com.br.orcamento;
+package com.br;
 
 import com.br.orcamento.pedido.Acao.EnviarPedidoEmail;
 import com.br.orcamento.pedido.Acao.SalvarPedidoNoBanco;
