@@ -1,2 +1,7 @@
-package com.br.orcamento;public interface Orcavel {
+package com.br.orcamento;
+
+import java.math.BigDecimal;
+
+public interface Orcavel {
+    BigDecimal getValor();
 }

@@ -10,6 +10,7 @@ public class RegistroDeOrcamento {
     private HttpAdapter http;
 
     public RegistroDeOrcamento(HttpAdapter http) {
+
         this.http = http;
     }
 
